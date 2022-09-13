@@ -50,7 +50,6 @@ MIMIR-UW
 │   │   │   │   │   └── sensor.yaml
 │   │   │   │   ├── cam1
 │   │   │   │   └── cam2
-
 │   │   ├── track1
 │   │   └── track2
 ├── SeaFloor_Algae
