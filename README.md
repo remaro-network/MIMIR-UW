@@ -40,26 +40,17 @@ MIMIR-UW
 │   │   │   │   │   └── sensor.yaml
 │   │   │   │   ├── cam1
 │   │   │   │   └── cam2
-│   │   │   ├── depth
+│   │   │   └── depth
 │   │   │   │   ├── cam0
 │   │   │   │   │   ├── data
-│   │   │   │   │   │   ├── <filename0>.pfm
+│   │   │   │   │   │   ├── <filename0>.exr
 │   │   │   │   │   │   ├── ...
-│   │   │   │   │   │   ├── <filenameN>.pfm
+│   │   │   │   │   │   ├── <filenameN>.exr
 │   │   │   │   │   ├── data.csv
 │   │   │   │   │   └── sensor.yaml
 │   │   │   │   ├── cam1
 │   │   │   │   └── cam2
-│   │   │   └── optical_flow
-│   │   │   │   ├── cam0
-│   │   │   │   │   ├── data
-│   │   │   │   │   │   ├── <filename0>.pfm
-│   │   │   │   │   │   ├── ...
-│   │   │   │   │   │   ├── <filenameN>.pfm
-│   │   │   │   │   ├── data.csv
-│   │   │   │   │   └── sensor.yaml
-│   │   │   │   ├── cam1
-│   │   │   │   └── cam2
+
 │   │   ├── track1
 │   │   └── track2
 ├── SeaFloor_Algae
