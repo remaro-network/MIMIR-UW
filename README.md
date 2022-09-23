@@ -137,6 +137,10 @@ And for the IMU:
 
 With `T_BS` the transform between body and sensor frame.
 
+## Dataset evaluation
+In our paper, we evaluate the performance of ORB-SLAM3 and DSO in MIMIR-UW. If you wish to run the experiments in your own computer, you can find forks for both repositories under [evaluation/SLAM](https://github.com/remaro-network/MIMIR-UW/tree/main/evaluation/SLAM).
+These forks provide all the files required by each repository, plus script files to easily run the algorithms on MIMIR-UW.
+
 ## Data recorder
 
 You can use the settings file for AirSim provided in this repo by creating a symlink as follows:
