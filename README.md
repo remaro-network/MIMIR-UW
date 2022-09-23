@@ -9,10 +9,19 @@ Here you will find all the relevant information regarding the dataset introduced
 
       
  ## Dataset link
- You can access MIMIR-UW from [the following link(TODO)]()
+ You can download MIMIR-UW from [the following link(TODO)]()
  
+ 
+ ## The four underwater environments in MIMIR
+
+|    |   |
+:-------------------------:|:-------------------------:
+![](https://github.com/remaro-network/MIMIR-UW/blob/main/media/MIMIR-oceanfloor.gif?raw=true)  |  ![](https://github.com/remaro-network/MIMIR-UW/blob/main/media/MIMIR-seafloor.gif?raw=true) |  
+![](https://github.com/remaro-network/MIMIR-UW/blob/main/media/MIMIR-seaflooralgae.gif?raw=true)  |  ![](https://github.com/remaro-network/MIMIR-UW/blob/main/media/MIMIR-sandpipe.gif?raw=true) |  
+
+
  ## Dataset structure
-Thereafter the data tree is presented. For the sake of brevity, we only show the nested structured under one of the tracks for one of the sequences, that is, under track0 for the SeaFloor sequence. Similarly, we only show the nested structure under one of the cameras. Note that the structure is the same for all cameras and sequences. 
+The data tree is shown below. For the sake of brevity, we only show the nested structured under one of the tracks for one of the sequences, that is, under track0 for the SeaFloor sequence. Similarly, we only show the nested structure under one of the cameras. Note that the structure is the same for all cameras and sequences. 
 ```
 MIMIR-UW
 ├── SeaFloor
@@ -70,13 +79,63 @@ MIMIR-UW
 └── README.md
 ```
 
-## The four underwater environments in MIMIR
+## Data format
+We follow a dataset format similar to the [ASL format proposed by EuRoC](https://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets). We provide calibration files for all available sensors, with temporally aligned ground truth and measurements.
+The calibration files are provided as a sensor.yaml file. For the camera, the data is comprised as follows:
 
-|    |   |
-:-------------------------:|:-------------------------:
-![](https://github.com/remaro-network/MIMIR-UW/blob/main/media/MIMIR-oceanfloor.gif?raw=true)  |  ![](https://github.com/remaro-network/MIMIR-UW/blob/main/media/MIMIR-seafloor.gif?raw=true) |  
-![](https://github.com/remaro-network/MIMIR-UW/blob/main/media/MIMIR-seaflooralgae.gif?raw=true)  |  ![](https://github.com/remaro-network/MIMIR-UW/blob/main/media/MIMIR-sandpipe.gif?raw=true) |  
+```
+{
+    "sensor_type": "front_left",
+    "comment": "rgb",
+    "T_BS": [
+        [0.9659258262890682, -0.0, -0.25881904510252074, 0.45],
+        [0.0, 1.0, -0.0, -0.06],
+        [0.25881904510252074, 0.0, 0.9659258262890682, 0.0],
+        [0.0, 0.0, 0.0, 1.0]
+    ],
+    "rate_hz": 30,
+    "resolution": [
+        720,
+        540
+    ],
+    "camera_model": "pinhole",
+    "intrinsics": [
+        [252.07470703125, 0.0, 360.0],
+        [0.0, 252.07470703125, 270.0],
+        [0.0, 0.0, 1.0]
+    ],
+    "distortion_model": "radial-tangential",
+    "distortion_coefficients": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+    ]
+}
+```
+And for the IMU:
 
+```
+{
+    "sensor_type": "imu0",
+    "T_BS": [
+        [1.0, 0.0, 0.0, 0.0],
+        [0.0, 1.0, 0.0, 0.0],
+        [0.0, 0.0, 1.0, 0.0],
+        [0.0, 0.0, 0.0, 1.0]
+    ],
+    "rate_hz": 210,
+    "angular_random_walk": 0.3,
+    "giro_bias_stability_tau": 500,
+    "giro_bias_stability": 4.6,
+    "velocity_random_walk": 0.24,
+    "accel_bias_stability": 36,
+    "accel_bias_stability_tau": 800
+}
+```
+
+With `T_BS` the transform between body and sensor frame.
 
 ## Data recorder
 
