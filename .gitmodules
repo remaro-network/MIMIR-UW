@@ -1,0 +1,6 @@
+[submodule "evaluation/SLAM/dso"]
+	path = evaluation/SLAM/dso
+	url = https://github.com/olayasturias/dso
+[submodule "evaluation/SLAM/ORB_SLAM3"]
+	path = evaluation/SLAM/ORB_SLAM3
+	url = https://github.com/olayasturias/ORB_SLAM3
