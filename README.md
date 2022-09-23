@@ -3,6 +3,10 @@
 Here you will find all the relevant information regarding the dataset introduced in [our paper(TODO)]()
 
 
+| Simulated underwater robot    |  3 cameras x 3 sensors | 4 environments |
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://github.com/remaro-network/MIMIR-UW/blob/main/media/MMGA.png?raw=true)  |  ![](https://github.com/remaro-network/MIMIR-UW/blob/main/media/MIMIR-cameras.gif?raw=true) |  ![](https://github.com/remaro-network/MIMIR-UW/blob/main/media/MIMIR-4envs.gif?raw=true)
+
       
  ## Dataset link
  You can access MIMIR-UW from [the following link(TODO)]()
@@ -66,10 +70,18 @@ MIMIR-UW
 └── README.md
 ```
 
+## The four underwater environments in MIMIR
+
+|    |   |
+:-------------------------:|:-------------------------:
+![](https://github.com/remaro-network/MIMIR-UW/blob/main/media/MIMIR-oceanfloor.gif?raw=true)  |  ![](https://github.com/remaro-network/MIMIR-UW/blob/main/media/MIMIR-seafloor.gif?raw=true) |  
+![](https://github.com/remaro-network/MIMIR-UW/blob/main/media/MIMIR-seaflooralgae.gif?raw=true)  |  ![](https://github.com/remaro-network/MIMIR-UW/blob/main/media/MIMIR-sandpipe.gif?raw=true) |  
+
+
 ## Data recorder
 
 You can use the settings file for AirSim provided in this repo by creating a symlink as follows:
 
 	```
-	ln -s ~/MIMIR-UW/airsim_data_generator/settings.json ~/Documents/AirSim/settings.json
+	ln -s ~/MIMIR-UW/SeaFloor/settings.json ~/Documents/AirSim/settings.json
 	```
