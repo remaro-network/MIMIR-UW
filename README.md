@@ -24,7 +24,7 @@ This work is part of the Reliable AI for Marine Robotics (REMARO) Project. For m
 This project has received funding from the European Union's Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No. 956200.
 
  ## Dataset link
- You can download MIMIR-UW from [the following link(TODO)]()
+ You can download MIMIR-UW from [the following link](https://zenodo.org/records/10406384)
  
  
  ## The four underwater environments in MIMIR
