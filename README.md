@@ -1,7 +1,7 @@
 # Welcome to MIMIR-UW!:octopus:
 
-Here you will find all the relevant information regarding the dataset introduced in [our paper(TODO)]()
-
+Here you will find all the relevant information regarding the dataset introduced in [our paper:](https://doi.org/10.1109/IROS55552.2023.10341436)
+> Álvarez-Tuñón, O., Kanner, H., Marnet, L. R., Pham, H. X., le Fevre Sejersen, J., Brodskiy, Y., & Kayacan, E. (2023, October). Mimir-uw: A multipurpose synthetic dataset for underwater navigation and inspection. In 2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) (pp. 6141-6148). IEEE.
 
 | Simulated underwater robot    |  3 cameras x 3 sensors | 4 environments |
 :-------------------------:|:-------------------------:|:-------------------------:
